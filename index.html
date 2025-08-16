@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>3D Responsive Navbar</title>
+  <link rel="stylesheet" href="./Style.css">
+</head>
+<body>
+  <!-- 3D Navbar -->
+  <header class="navbar">
+    <div class="logo">SIVAKUMAR M</div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <nav>
+      <ul id="nav-links">
+        <li><a href="#Academicqualifications">Academic</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="hero-content">
+     <div class="hero-img">
+      <img src="./img/resume_pic.jpg" alt="Siva Kumar">
+    </div>
+    <h1>Hi, I'm <span>SivaKumar</span></h1>
+     <a href="msivakumar1602(1).pdf" class="btn" download id="resumeBtn">Resume Download</a>
+  </div>
+</section>
+<!-- Education Section -->
+ <section id="Academicqualifications">
+  <section class="education-page">
+    <div class="container">
+      <h1>Academic Qualifications</h1>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h2>Master Of Computer Applications</h2>
+          <div class="popup-score" data-percentage="72">0%</div>
+          <span class="year">2023 - 2025</span>
+          <p>R.V.S College Of Engineering & Technology, Dindigul</p>
+        </div>
+        <div class="timeline-item">
+          <h2>Bachelor Of Computer Applications</h2>
+          <div class="popup-score" data-percentage="67.3">67.3%</div>
+          <span class="year">2020 - 2023</span>
+          <p>G.T.N Arts College, Dindigul</p>
+        </div>
+        <div class="timeline-item">
+          <h2>Higher Secondary School</h2>
+          <div class="popup-score" data-percentage="52">0%</div>
+          <span class="year">2019 - 2020</span>
+          <p>Government Higher Secondary School, K.Ramanathapuram(Dindigul)</p>
+        </div>
+        <div class="timeline-item">
+          <h2>Secondary School</h2>
+          <div class="popup-score" data-percentage="70">0%</div>
+          <span class="year">2017 - 2018</span>
+          <p>Government Higher Secondary School, K.Ramanathapuram(Dindigul)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+ </section>
+<section class="skills-page">
+  <div class="container">
+    <h1>My Skills</h1>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="circle">
+          <img src="./img/d1-removebg-preview.png" alt="HTML">
+        </div>
+        <h2>HTML</h2>
+      </div>
+      <div class="skill-card">
+        <div class="circle">
+          <img src="./img/d3-removebg-preview.png" alt="CSS">
+        </div>
+        <h2>CSS</h2>
+      </div>
+      <div class="skill-card">
+        <div class="circle">
+          <img src="./img/js-removebg-preview.png" alt="JavaScript">
+        </div>
+        <h2>JavaScript</h2>
+      </div>
+      <div class="skill-card">
+        <div class="circle">
+          <img src="./img/download-removebg-preview.png" alt="React JS">
+        </div>
+        <h2>React</h2>
+      </div>
+      <div class="skill-card">
+        <div class="circle">
+          <img src="./img/dd-removebg-preview.png" alt="Java">
+        </div>
+        <h2>Java</h2>
+      </div>
+      <div class="skill-card">
+        <div class="circle">
+          <img src="./img/download2-removebg-preview.png" alt="MySQL">
+        </div>
+        <h2>MySQL</h2>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="projects">
+ <header class="header">
+    <h1>My Projects</h1>
+    <p>Some of my best work & experiments.</p>
+  </header>
+  <section class="projects">
+    <!-- Project Card -->
+    <div class="project-card" onclick="openModal('modal1')">
+      <img src="./img/dp2.png" alt="Project 1">
+      <div class="project-info">
+        <h3>software company website</h3>
+        <p>A modern,Software-Company Web Page</p>
+      </div>
+    </div>
+    <div class="project-card" onclick="openModal('modal2')">
+      <img src="./img/dp.png" alt="Project 2">
+      <div class="project-info">
+        <h3>Grocery Shopping Website</h3>
+        <p>A full-fledged online grocery store.</p>
+      </div>
+    </div>
+    <div class="project-card" onclick="openModal('modal3')">
+      <img src="./img/dp3.png" alt="Project 3">
+      <div class="project-info">
+        <h3>Java console project</h3>
+        <p>A full-fledged Movie Ticket Booking System</p>
+      </div>
+    </div>
+  </section>
+  <!-- Modal 1 -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal1')">&times;</span>
+      <h2>Software Company Website</h2>
+      <p>This project showcases Software Company Website Developed Using HTML,CSS,JavaScript</p>
+      <img src="./img/Screenshot (128).png" alt="SoftWarw Company Screenshot">
+      <div class="buttons">
+        <a href="https://sivakumar725.github.io/Software-Company/" target="_blank" class="btn live">View Live</a>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 2 -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <h2>E-Commerce Website</h2>
+      <p>An advanced online grocery platform with multiple pages and responsive design. Using HTML,CSS</p>
+      <img src="./img/Screenshot (123).png" alt="E-Commerce Screenshot">
+      <div class="buttons">
+        <a href="https://sivakumar725.github.io/Gurumart/" target="_blank" class="btn live">View Live</a>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 3 -->
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal3')">&times;</span>
+      <h2>Movie Booking</h2>
+      <p>Implemented a Java console project, versioned on GitHub, and available as a downloadable ZIP file.</p>
+      <img src="./img/ChatGPT Image Aug 16, 2025, 05_33_48 PM.png" alt="Dashboard Screenshot">
+      <div class="buttons">
+        <a href="https://github.com/sivakumar725/MovieTicketBooking.git" target="_blank" class="btn live">View Live</a>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- About Section -->
+<section id="about" class="about-section">
+  <div class="container">
+    <div class="about-content">
+      <div class="about-img">
+        <img src="./img/resume_pic.jpg" alt="Siva Kumar">
+      </div>
+      <div class="about-text">
+        <h1>About Me</h1>
+        <p>
+          Hi, I'm <b>Siva Kumar</b>, An Aspiring <b>Java Full Stack Developer</b> 
+          Eager To Begin My Career As A <b>Fresher Java Developer</b>.  
+          I have hands-on experience in <b>Java, Spring Boot, MySQL, HTML, CSS, JavaScript, and React</b>, 
+          gained through academic projects and personal practice.  
+          <br><br>
+          I am passionate about building scalable applications, problem-solving, and continuously 
+          learning new technologies. My goal is to join a dynamic team where I can apply my 
+          technical skills, contribute to real-world projects, and grow as a professional Java developer.  
+          <br><br>
+          Outside of coding, I enjoy exploring emerging technologies, improving my design skills, 
+          and contributing to open-source projects.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Hire Me Section -->
+<section id="hire-me" class="hire-me">
+  <div class="container hire-content hidden">
+    <h1>Why Hire Me?</h1>
+    <p class="typewriter" data-text="I am an Aspiring Java Developer with strong Core Java fundamentals, including OOPs, Collections, Exception Handling, and Multithreading."></p>
+    <p class="typewriter" data-text="I have hands-on experience in building Spring Boot REST APIs with MySQL, focusing on clean and scalable backend development."></p>
+    <p class="typewriter" data-text="On the frontend, I am skilled in HTML, CSS, JavaScript, and React for creating responsive and interactive user interfaces."></p>
+    <p class="typewriter" data-text="My academic projects, including e-commerce platforms and software company websites, showcase my ability to build full-stack applications."></p>
+    <p class="typewriter" data-text="I Am Passionate About Learning, problem-solving, and contributing to enterprise-level Java projects as I grow as a professional developer."></p>
+  </div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <p>If you’d like to connect, collaborate, or discuss opportunities, feel free to reach out below.</p>
+    <form class="contact-form">
+      <div class="form-group">
+        <input type="text" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <!-- Social Links -->
+    <div class="social-links">
+      <a href="https://github.com/sivakumar725" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+     <a href="https://www.linkedin.com/in/siva-kumar-m1602/" target="_blank" aria-label="LinkedIn">
+  <i class="fab fa-linkedin"></i>
+</a>
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=msiva1602@gmail.com" 
+   target="_blank" aria-label="Email">
+  <i class="fas fa-envelope"></i>
+</a>
+    </div>
+  </div>
+</section>
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <p>&copy; 2025 SivaKumar | Aspiring Java Developer</p>
+  </div>
+</footer>
+  <script src="./Script.js"></script>
+</body>
+</html>
